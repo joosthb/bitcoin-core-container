@@ -7,4 +7,6 @@ services:
     volumes:
       - ./data:/root/.bitcoin
     # - ./bitcoin.conf:/etc/bitcoin.conf
+    ports:
+      - 8333:8333
     restart: unless-stopped
