@@ -1,8 +1,7 @@
-version: "3"
 services:
   bitcoin-core:
     container_name: bitcoin-core
-    # image: ghcr.io/joosthb/bitcoin-core
+    image: ghcr.io/joosthb/bitcoin-core-container:release
     build: .
     volumes:
       - ./data:/root/.bitcoin

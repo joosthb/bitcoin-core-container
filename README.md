@@ -13,7 +13,7 @@ read CR_PAT
 # login
 echo $CR_PAT | docker login ghcr.io -u joosthb --password-stdin
 
-docker run --rm ghcr.io/joosthb/bitcoin-core:release --help
+docker run --rm ghcr.io/joosthb/bitcoin-core-container:release --help
 ```
 
 Testrun
